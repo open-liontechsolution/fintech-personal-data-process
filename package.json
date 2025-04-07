@@ -1,0 +1,36 @@
+{
+  "name": "fintech-personal-data-transf",
+  "version": "0.1.0",
+  "description": "Microservicio para transformación de datos financieros desde MongoDB a MySQL",
+  "main": "dist/src/index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/src/index.js",
+    "dev": "ts-node-dev --respawn src/index.ts",
+    "lint": "eslint . --ext .ts",
+    "test": "jest"
+  },
+  "dependencies": {
+    "fintech-personal-common": "^1.0.0",
+    "mongoose": "^7.0.3",
+    "mongodb": "^5.1.0",
+    "mysql2": "^3.2.0",
+    "sequelize": "^6.31.0",
+    "dotenv": "^16.0.3"
+  },
+  "devDependencies": {
+    "@types/jest": "^29.5.0",
+    "@types/node": "^18.15.11",
+    "@typescript-eslint/eslint-plugin": "^5.57.1",
+    "@typescript-eslint/parser": "^5.57.1",
+    "eslint": "^8.37.0",
+    "jest": "^29.5.0",
+    "ts-jest": "^29.1.0",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.0.3"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "private": true
+}
